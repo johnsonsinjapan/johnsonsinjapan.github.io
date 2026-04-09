@@ -1,1 +1,192 @@
-Welcome to Johnsons in Japan!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnsons in Japan</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #16a085;
+            --background-color: #fdfdfd;
+            --text-color: #333;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+        position: relative;
+        background: url('./assets/images/trains.jpg') no-repeat center center/cover;
+        height: 60vh;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        header h1, header p, header a {
+            position: relative;
+            z-index: 2;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        header a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        header a:hover {
+            background: #1abc9c;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .two-columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .two-columns div {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: var(--secondary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #1abc9c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: var(--primary-color);
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Johnsons in Japan</h1>
+        <p>McLain and Rebecca will be serving in Japan as missionaries. Please join us in
+            prayer that God, by His Spirit and through His Word, would draw many to saving
+            faith and to treasure Jesus as supremely worthy.</p>
+        <!-- Updated button linking directly to Google Forms -->
+        <!--<a href="#who-we-are">Learn About Us</a> -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdVse9pSV8o0ArMBPl3bo6xAT0IZZr5alagqieJoo61_LT9g/viewform" target="_blank">Newsletter Sign-Up</a>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>Stay Tuned! Website Under Construction.</h2>
+            <p>More information coming soon. In the meantime, please sign up for our email newsletter!</p>
+        </section>
+
+        <!--
+        <section id="who-we-are">
+            <h2>Who We Are</h2>
+            <div class="two-columns">
+                <div>
+                    <p>We are McLain and Rebecca Johnson, a married couple preparing to serve as missionaries in Tokyo, Japan. The Lord has given us a growing love for the Japanese people and a desire to see Christ known where he is not yet widely worshiped.</p>
+                </div>
+                <div>
+                    <p>While this space will be updated with more of our story in the future, our prayer is simple: that our lives would be used for the glory of God and the spread of the gospel. We are grateful for the opportunity to go, and for those who partner with us through prayer and support.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>The Need in Japan</h2>
+            <p>Japan remains one of the least reached nations in the world with the gospel. Despite its modern infrastructure and rich culture, only a small percentage of the population identifies as Christian, and many have never heard a clear presentation of the good news of Jesus Christ.</p>
+            <p>There is a great need for faithful gospel witness, for churches to be strengthened and planted, and for believers to be discipled. We long to see the Lord call many to himself in Japan and to establish vibrant, Christ-centered communities of faith.</p>
+        </section>
+
+        <section>
+            <h2>Our Ministry</h2>
+            <p>In Tokyo, we hope to serve alongside local churches in evangelism, discipleship, and church ministry. This includes building relationships, sharing the gospel, and walking with others as they grow in their understanding of Christ.</p>
+            <p>Our desire is not only to see individuals come to faith, but to see lasting, healthy churches established that will continue the work of ministry for generations to come. We are committed to serving faithfully, trusting the Lord to bear fruit in his time.</p>
+        </section>
+    -->
+        <section id="newsletter">
+            <h2>Stay Connected</h2>
+            <p>We would be honored to have you partner with us in prayer. If you would like to receive updates about our ministry, specific prayer requests, and what the Lord is doing in Japan, please sign up for our newsletter.</p>
+            <!-- Updated button linking directly to Google Forms -->
+            <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfdVse9pSV8o0ArMBPl3bo6xAT0IZZr5alagqieJoo61_LT9g/viewform', '_blank')">Newsletter Sign-Up</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>© Johnsons in Japan — All glory to God</p>
+    </footer>
+</body>
+</html>
